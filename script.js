@@ -59,40 +59,30 @@ let products = document.querySelector(".products");
 let pepper = document.querySelector(".pepper");
 let menuOD = document.querySelector(".menuoftheday");
 let tomato = document.querySelector(".tomato2");
+let tomatoOne = document.querySelector(".tomato");
 
 const pepperPosition = ()=>{
     let totalHeightForPepper = header.offsetHeight + about.offsetHeight + products.offsetHeight + pepper.offsetHeight;
     if(window.outerWidth < 670){totalHeightForPepper = totalHeightForPepper +100}
     pepper.style.top = `${totalHeightForPepper}px`;
 }
-window.addEventListener("resize",pepperPosition)
-
-
+// window.addEventListener("resize",pepperPosition)
 const tomatoPosition = ()=>{
     let totalHeightForTomato = header.offsetHeight + about.offsetHeight + products.offsetHeight + menuOD.offsetHeight;
     if(window.outerWidth < 670){totalHeightForTomato = totalHeightForTomato +100}
     tomato.style.top = `${totalHeightForTomato}px`;
 }
+const tomatoOnePosition = ()=>{
+    let totalHeightForTomatoOne = header.offsetHeight + about.offsetHeight + tomatoOne.offsetHeight;
+    tomatoOne.style.top = `${totalHeightForTomatoOne}px`;
+}
 
 pepperPosition()
 tomatoPosition()
-
-
-// fix safari proplem  //
-// let imgCons = document.querySelectorAll(".img-f-con")
-
-// imgCons.forEach((imgCon)=>{
-//     console.log(imgCon.offsetHeight);
-//     console.log(imgCon.offsetWidht);
-    
-//     const fixSafari = ()=>{
-//         imgCon.style.width = imgCon.offsetHeight
-//     }
-//     fixSafari()
-// })
+tomatoOnePosition()
 
 window.addEventListener("resize",()=>{
     tomatoPosition()
+    tomatoOnePosition()
     pepperPosition()
-    fixSafari()
 })
