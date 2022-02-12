@@ -1,0 +1,70 @@
+footer {
+   background-color: $graycolor;
+   color: $primaryfootercolor;
+   margin-top: 70px;
+   .container {
+		display: flex;
+		justify-content: space-between;
+      .s-l-b {
+         width: 48%;
+         display: flex;
+         flex-direction: column;
+         .socail {
+            a {
+               font-size: clamp(20px, 4vw, 30px);
+               i {
+                  color: $primaryfootercolor;
+                  margin: 20px 20px 20px 0;
+						@media (max-width:767px) {
+							margin: 0 10px 20px 0;
+						}
+               }
+            }
+         }
+         a {
+            img {
+               width: 50%;
+               filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg) brightness(96%) contrast(73%);
+						@media (max-width:767px) {
+							width: 70%;
+						}
+            }
+         }
+         p {
+            line-height: 1.2em;
+				font-size: clamp(10px, 2.5vw, 15px);
+            margin: 10px 0 10px 12px;
+         }
+         button {
+            width: 30%;
+            text-align: center;
+            background-color: $primaryfootercolor;
+            color: #fff;
+            align-self: end;
+				@media (max-width:767px) {
+					width: fit-content;
+				}
+         }
+      }
+      .info {
+         width: 48%;
+			display: flex;
+			justify-content: space-between;
+         .sinfo1, .sinfo2 {
+				width: 48%;
+				p{
+					line-height: 1.2em;
+					font-size: clamp(10px, 2.5vw, 15px);
+				}
+         }
+			@media (max-width:767px) {
+				.sinfo1{
+					width: 100%;
+				}
+				.sinfo2{
+					display: none;
+				}
+			}
+      }
+   }
+}

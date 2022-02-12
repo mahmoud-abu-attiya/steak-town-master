@@ -1,0 +1,121 @@
+$browncolor: #472718;
+$graycolor: #f6f6f6;
+$primaryfootercolor: #676767;
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+a {
+   color: #000;
+   text-decoration: none;
+}
+
+body {
+   color: $browncolor;
+   h2 {
+      color: $browncolor;
+      @media (max-width: 767px) {
+         text-align: center;
+      }
+   }
+   .herds,
+   .herds2,
+   .tomato,
+   .pepper,
+   .tomato2 {
+      position: absolute;
+      width: 20%;
+      max-width: 300px;
+      top: 98vh;
+      right: 0;
+      z-index: 3;
+      overflow: hidden;
+      img {
+         width: 100%;
+         position: relative;
+         left: 50%;
+      }
+   }
+   .herds2 {
+      left: 0;
+      top: 87vh;
+      img {
+         transform: rotatey(180deg);
+         left: -50%;
+      }
+   }
+   .tomato {
+      top: 140vh;
+      max-width: 170px;
+      img {
+         left: 45%;
+      }
+   }
+	.pepper{
+		img{
+			left:35%;
+		}
+	}
+   .tomato2{
+      left: 0;
+      // z-index: -1;
+      img{
+         left: -25%;
+      }
+   }
+}
+
+@media (max-width: 600px) {
+   body {
+      .herds,
+      .herds2,
+      .tomato,
+      .tomato2 {
+         width: 100px;
+         img {
+            left: 60%;
+         }
+      }
+      .herds2 {
+         top: 95vh;
+         img {
+            left: -50%;
+         }
+      }
+      .tomato {
+         top: 155vh;
+      }
+      .tomato2 {
+         img{
+            left: -22%;
+         }
+      }
+   }
+}
+///////////////////animation////////////////////
+.inline-photo {
+   opacity: 0;
+   transform: translateY(7em) rotateZ(0deg);
+   transition: transform 1s 0.2s, opacity 1s 0.2s ease-out;
+   will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+   opacity: 1;
+}
+
+.is-visible {
+   transform: none;
+}
+///////////////////animation////////////////////
+
+@import "navbar";
+@import "header";
+@import "about";
+@import "products";
+@import "menu";
+@import "contact";
+@import "footer";
+@import "menuPage";

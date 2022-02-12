@@ -1,0 +1,13 @@
+section.about{
+    position: relative;
+    margin:50px auto;
+    z-index: 4;
+    p{
+        margin: 10px 0 10px 5px;
+        line-height: 1.2em;
+        font-size: clamp(10px, 2.5vw, 15px);
+    }
+    @media (max-width:992px) {
+            text-align: center;
+    }
+}
