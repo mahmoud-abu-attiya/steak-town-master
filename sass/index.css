@@ -762,6 +762,8 @@ footer .container .info .sinfo1 p, footer .container .info .sinfo2 p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
   margin: 36px 0;
 }
@@ -795,10 +797,34 @@ footer .container .info .sinfo1 p, footer .container .info .sinfo2 p {
   background-color: #f6f6f6;
 }
 
+.menu-page .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
 .menu-page .card .card-body p {
   line-height: 1rem;
   margin: 0;
   font-size: clamp(10px, 1vw, 16px);
+}
+
+.menu-page .card .card-body .price {
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: auto;
+  background-color: #472718;
+  color: #fff;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 @media (max-width: 580px) {

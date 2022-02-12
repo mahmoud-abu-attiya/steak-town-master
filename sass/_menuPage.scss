@@ -40,13 +40,26 @@
     .card {
       box-shadow: 0px 0px 20px -10px;
       background-color: $graycolor;
-      .col-3 {
+      .col-9 {
       }
       .card-body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         p {
           line-height: 1rem;
           margin: 0;
           font-size: clamp(10px, 1vw, 16px);
+        }
+        .price{
+          text-align: center;
+          width: 100px;
+          padding: 10px;
+          border-radius: 5px;
+          margin-top: auto;
+          background-color: $browncolor;
+          color:#fff;
+          align-self: end;
         }
       }
     }
