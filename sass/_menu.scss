@@ -1,7 +1,7 @@
 section.menuoftheday {
    position: relative;
    margin-top: 50px;
-   margin-bottom: 150px;
+   margin-bottom: 200px;
    .pepper{
       position: absolute;
    }
@@ -31,7 +31,7 @@ section.menuoftheday {
                height: 7.5em;
             }
             .food-info {
-               width: 65%;
+               // width: 65%;
                padding: 0px 20px;
                @media (max-width: 767px) {
                   display: none;

@@ -91,8 +91,8 @@ tomatoPosition()
 //     fixSafari()
 // })
 
-// window.addEventListener("resize",()=>{
-//     tomatoPosition()
-//     pepperPosition()
-//     fixSafari()
-// })
+window.addEventListener("resize",()=>{
+    tomatoPosition()
+    pepperPosition()
+    fixSafari()
+})
