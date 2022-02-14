@@ -442,6 +442,9 @@ section.menuoftheday .menu .menu-items .menu-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 10px;
 }
 
@@ -480,6 +483,9 @@ section.menuoftheday .menu .menu-items .menu-item .food-info button {
   float: right;
   min-width: 20%;
   background-color: #472718;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
 }
 
 section.menuoftheday .menu .menu-items .menu-item .motdi {
