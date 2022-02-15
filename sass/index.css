@@ -637,19 +637,61 @@ section.contact-container .contact .info span {
 footer {
   background-color: #f6f6f6;
   color: #676767;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  overflow: hidden;
 }
 
 footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-footer .container .s-l-b {
-  width: 48%;
+@media (max-width: 767px) {
+  footer .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .container .fo-logo {
+    text-align: center;
+  }
+}
+
+footer .container .fo-logo a img {
+  width: 100%;
+  -webkit-filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg) brightness(96%) contrast(73%);
+          filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg) brightness(96%) contrast(73%);
+}
+
+@media (max-width: 767px) {
+  footer .container .fo-logo a img {
+    width: 80%;
+  }
+}
+
+footer .container .fo-logo ul {
+  line-height: 2rem;
+  padding-left: 1rem;
+  margin-top: 10px;
+}
+
+footer .container .fo-logo ul a {
+  display: inline-block;
+  padding: 3px;
+  margin-right: 3px;
+  text-decoration: underline;
+  color: #676767;
+  font-weight: bold;
+}
+
+footer .container .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,84 +699,79 @@ footer .container .s-l-b {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  line-height: 15px;
+  padding: 10px 25px;
 }
 
-footer .container .s-l-b .socail a {
+@media (max-width: 767px) {
+  footer .container .info {
+    padding: 0px;
+  }
+}
+
+footer .container .info h4 {
+  white-space: nowrap;
+  margin: 0;
+}
+
+footer .container .info h4 i {
+  margin-right: 10px;
+}
+
+footer .container .info span {
+  display: block;
+  font-size: clamp(13px, 1.5vw, 14px);
+}
+
+footer .container .info div {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  footer .container .info div {
+    margin-bottom: 10px;
+  }
+}
+
+footer .container .fo-about p {
+  line-height: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  footer .container .fo-about .socail {
+    text-align: center;
+  }
+}
+
+footer .container .fo-about .socail a {
   font-size: clamp(20px, 4vw, 30px);
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 5px;
 }
 
-footer .container .s-l-b .socail a i {
-  color: #676767;
-  margin: 20px 20px 20px 0;
+footer .container .fo-about .socail a i {
+  margin: 5px;
 }
 
-@media (max-width: 767px) {
-  footer .container .s-l-b .socail a i {
-    margin: 0 10px 20px 0;
-  }
-}
-
-footer .container .s-l-b a img {
-  width: 50%;
-  -webkit-filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg) brightness(96%) contrast(73%);
-          filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg) brightness(96%) contrast(73%);
-}
-
-@media (max-width: 767px) {
-  footer .container .s-l-b a img {
-    width: 70%;
-  }
-}
-
-footer .container .s-l-b p {
-  line-height: 1.2em;
-  font-size: clamp(10px, 2.5vw, 15px);
-  margin: 10px 0 10px 12px;
-}
-
-footer .container .s-l-b button {
-  width: 30%;
+footer .cr {
+  color: #67676780;
+  width: 72%;
+  border-top: solid 2px #67676780;
   text-align: center;
-  background-color: #676767;
-  color: #fff;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  margin: 25px auto 0 auto;
+  padding: 25px 0 0 0;
 }
 
 @media (max-width: 767px) {
-  footer .container .s-l-b button {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-}
-
-footer .container .info {
-  width: 48%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-footer .container .info .sinfo1, footer .container .info .sinfo2 {
-  width: 48%;
-}
-
-footer .container .info .sinfo1 p, footer .container .info .sinfo2 p {
-  line-height: 1.2em;
-  font-size: clamp(10px, 2.5vw, 15px);
-}
-
-@media (max-width: 767px) {
-  footer .container .info .sinfo1 {
-    width: 100%;
-  }
-  footer .container .info .sinfo2 {
-    display: none;
+  footer .cr {
+    width: 90%;
+    font-size: smaller;
   }
 }
 
