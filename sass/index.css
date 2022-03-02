@@ -924,6 +924,7 @@ section.aboutpage .proudlys .proudlys-container .proudly {
 section.aboutpage .proudlys .proudlys-container .proudly p {
   text-align: left;
   margin: 0 0 0 5px;
+  font-size: clamp(10px, 2.5vw, 15px);
 }
 
 section.aboutpage .infoabout {
