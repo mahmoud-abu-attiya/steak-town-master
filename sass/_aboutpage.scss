@@ -15,6 +15,23 @@ section.aboutpage {
   p {
     text-align: center;
   }
+  .proudlys{
+    margin-top: 50px;
+    .proudlys-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .proudly{
+        display: flex;
+        width: 48%;
+        margin-top:20px ;
+        p{
+          text-align: left;
+          margin: 0 0 0 5px;
+        }
+      }
+    }
+  }
   .infoabout {
     display: flex;
     flex-direction: column;

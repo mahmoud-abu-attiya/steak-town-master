@@ -898,6 +898,34 @@ section.aboutpage p {
   text-align: center;
 }
 
+section.aboutpage .proudlys {
+  margin-top: 50px;
+}
+
+section.aboutpage .proudlys .proudlys-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.aboutpage .proudlys .proudlys-container .proudly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%;
+  margin-top: 20px;
+}
+
+section.aboutpage .proudlys .proudlys-container .proudly p {
+  text-align: left;
+  margin: 0 0 0 5px;
+}
+
 section.aboutpage .infoabout {
   display: -webkit-box;
   display: -ms-flexbox;
