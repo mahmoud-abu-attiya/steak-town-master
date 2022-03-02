@@ -1,0 +1,35 @@
+.fixed {
+  background-image: linear-gradient(rgba(128, 128, 128, 0.479), rgba(0, 0, 0, 0.541)),
+  url("../images/header3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding:50px 0;
+  margin: 80px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 48%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 35px 0px #000;
+    }
+    p {
+      width: 48%;
+      color: #fff;
+      font-size: clamp(16px,2vw,25px);
+      font-weight: bold;
+    }
+  }
+}
+.fixed2{
+  background-image: linear-gradient(rgba(128, 128, 128, 0.479), rgba(0, 0, 0, 0.541)),
+  url("../images/header1.jpg");
+}
+.fixed3{
+  background-image: linear-gradient(rgba(128, 128, 128, 0.479), rgba(0, 0, 0, 0.541)),
+  url("../images/header2.jpg");
+}
+
