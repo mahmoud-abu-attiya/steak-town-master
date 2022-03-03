@@ -54,12 +54,13 @@ var typed = new Typed('#typed', {
 
 //  vegitables position  //
 let header = document.querySelector("#carouselExampleControls");
-let about = document.querySelector(".about");
+let about = document.querySelector(".fixed1");
 let products = document.querySelector(".products");
 let pepper = document.querySelector(".pepper");
 let menuOD = document.querySelector(".menuoftheday");
 let tomato = document.querySelector(".tomato2");
 let tomatoOne = document.querySelector(".tomato");
+// let fixed1 = document.querySelector(".fixed1")
 
 const pepperPosition = ()=>{
     let totalHeightForPepper = header.offsetHeight + about.offsetHeight + products.offsetHeight + pepper.offsetHeight;

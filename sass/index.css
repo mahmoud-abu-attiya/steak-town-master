@@ -11,11 +11,12 @@ a {
 }
 
 body {
-  color: #472718;
+  color: #E0C097;
+  background-color: #2D2424;
 }
 
 body h2 {
-  color: #472718;
+  color: #E0C097;
 }
 
 @media (max-width: 767px) {
@@ -253,6 +254,8 @@ nav #navbarTogglerDemo01 ul li a {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  -webkit-box-shadow: 0px 0px 20px 10px #000;
+          box-shadow: 0px 0px 20px 10px #000;
 }
 
 #carouselExampleControls .header {
@@ -340,24 +343,6 @@ nav #navbarTogglerDemo01 ul li a {
   }
 }
 
-section.about {
-  position: relative;
-  margin: 50px auto;
-  z-index: 4;
-}
-
-section.about p {
-  margin: 10px 0 10px 5px;
-  line-height: 1.2em;
-  font-size: clamp(10px, 2.5vw, 15px);
-}
-
-@media (max-width: 992px) {
-  section.about {
-    text-align: center;
-  }
-}
-
 section.products h2 {
   margin-bottom: 30px;
 }
@@ -376,6 +361,7 @@ section.products .card {
 }
 
 section.products .card .card-body {
+  background-color: #B85C38;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,7 +369,6 @@ section.products .card .card-body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #f6f6f6;
 }
 
 section.products .card .card-body p {
@@ -419,11 +404,11 @@ section.menuoftheday .pepper {
 
 section.menuoftheday .menu {
   width: 70%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(rgba(232, 232, 232, 0.748)), to(white)), url("../images/logo.svg");
-  background-image: linear-gradient(to bottom, white, rgba(232, 232, 232, 0.748), white), url("../images/logo.svg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5c3d2e8a), to(#5c3d2e8a)), url("../images/logo.svg");
+  background-image: linear-gradient(to bottom, #5c3d2e8a, #5c3d2e8a), url("../images/logo.svg");
   background-size: 101px;
-  -webkit-box-shadow: 698px 0px 86px -100px white inset;
-          box-shadow: 698px 0px 86px -100px white inset;
+  -webkit-box-shadow: 698px 0px 86px -100px #2D2424 inset;
+          box-shadow: 698px 0px 86px -100px #2D2424 inset;
 }
 
 section.menuoftheday .menu .menu-items {
@@ -479,7 +464,7 @@ section.menuoftheday .menu .menu-items .menu-item .food-info p {
 section.menuoftheday .menu .menu-items .menu-item .food-info button {
   float: right;
   min-width: 20%;
-  background-color: #472718;
+  background-color: #E0C097;
 }
 
 section.menuoftheday .menu .menu-items .menu-item .motdi {
@@ -571,7 +556,7 @@ section.contact-container .contact form.form-floating .form-control {
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: #f6f6f6;
-  color: #472718;
+  color: #E0C097;
   margin-bottom: 10px;
 }
 
@@ -585,7 +570,7 @@ section.contact-container .contact form.form-floating input[type="submit"] {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: #472718;
+  background-color: #E0C097;
   color: #fff;
   padding: 10px 20px;
 }
@@ -868,7 +853,7 @@ footer .cr {
   padding: 10px;
   border-radius: 5px;
   margin-top: auto;
-  background-color: #472718;
+  background-color: #E0C097;
   color: #fff;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
@@ -887,6 +872,7 @@ footer .cr {
 section.aboutpage {
   margin-top: 0;
   padding-top: 150px;
+  color: #1d0707;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 209, 0.452)), color-stop(rgba(232, 232, 232, 0.932)), to(white)), url("../images/header3.jpg");
   background-image: linear-gradient(to bottom, rgba(255, 209, 209, 0.452), rgba(232, 232, 232, 0.932), white), url("../images/header3.jpg");
   padding-top: 150px;
@@ -895,6 +881,7 @@ section.aboutpage {
 
 section.aboutpage h2, section.aboutpage p {
   text-align: center;
+  color: #1d0707;
 }
 
 section.aboutpage .p-concept {
@@ -1062,15 +1049,20 @@ section.aboutpage .infoabout .info div {
 }
 
 .fixed {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.479)), to(rgba(0, 0, 0, 0.541))), url("../images/header3.jpg");
-  background-image: linear-gradient(rgba(128, 128, 128, 0.479), rgba(0, 0, 0, 0.541)), url("../images/header3.jpg");
+  color: #2D2424;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e0c097a8), to(#e0c097a8)), url("../images/body-bg.jpg");
+  background-image: linear-gradient(#e0c097a8, #e0c097a8), url("../images/body-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   padding: 50px 0;
-  margin: 80px 0;
+  margin: 0 0 80px 0;
   max-height: 500px;
+}
+
+.fixed h2 {
+  color: #2D2424;
 }
 
 .fixed .container {
@@ -1093,19 +1085,12 @@ section.aboutpage .infoabout .info div {
           box-shadow: 0px 0px 35px 0px #000;
 }
 
-.fixed .container p {
-  color: #fff;
+.fixed .container .dis {
   font-size: clamp(16px, 2vw, 25px);
   font-weight: bold;
 }
 
 .fixed2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.479)), to(rgba(0, 0, 0, 0.541))), url("../images/header1.jpg");
-  background-image: linear-gradient(rgba(128, 128, 128, 0.479), rgba(0, 0, 0, 0.541)), url("../images/header1.jpg");
-}
-
-.fixed3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.479)), to(rgba(0, 0, 0, 0.541))), url("../images/header2.jpg");
-  background-image: linear-gradient(rgba(128, 128, 128, 0.479), rgba(0, 0, 0, 0.541)), url("../images/header2.jpg");
+  margin: 80px 0;
 }
 /*# sourceMappingURL=index.css.map */

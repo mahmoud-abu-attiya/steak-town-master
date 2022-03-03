@@ -10,9 +10,10 @@ section.products {
       text-align: center;
     }
     .card-body {
+      background-color: #B85C38;
       display: flex;
       flex-direction: column;
-      background-color: $graycolor;
+      // background-color: $graycolor;
       p {
         line-height: 1.2em;
         font-size: clamp(10px, 2.5vw, 15px);

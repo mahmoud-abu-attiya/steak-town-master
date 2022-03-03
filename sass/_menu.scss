@@ -9,13 +9,12 @@ section.menuoftheday {
       width: 70%;
       background-image: linear-gradient(
             to bottom,
-            rgba(255, 255, 255, 1),
-            rgba(232, 232, 232, 0.748),
-            rgba(255, 255, 255, 1)
+            #5c3d2e8a,
+            #5c3d2e8a
          ),
          url("../images/logo.svg");
       background-size: 101px;
-      box-shadow: 698px 0px 86px -100px white inset;
+      box-shadow: 698px 0px 86px -100px #2D2424 inset;
       .menu-items {
          padding: 10px 40px;
          @media (max-width: 991px) {

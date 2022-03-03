@@ -1,6 +1,7 @@
 section.aboutpage {
   margin-top: 0;
   padding-top: 150px;
+  color: rgb(29, 7, 7);
   background-image: linear-gradient(
           to bottom,
           rgba(255, 209, 209, 0.452),
@@ -12,6 +13,7 @@ section.aboutpage {
     padding-bottom: 50px;
     h2,p {
       text-align: center;
+      color: rgb(29, 7, 7);
   }
   .p-concept{
     font-size: clamp(16px, 1.5vw, 20px);
