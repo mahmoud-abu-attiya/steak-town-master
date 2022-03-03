@@ -2,9 +2,9 @@
     .menu-page {
       background-image: linear-gradient(
           to bottom,
-          rgba(126, 0, 2, 0.452),
-          rgba(232, 232, 232, 0.748),
-          rgba(255, 255, 255, 0.637)
+          rgba(0, 0, 0, 0),
+          #5c3d2eab,
+          $bodyBG
         ),
         url("../images/header3.jpg");
     padding-top: 150px;
@@ -33,7 +33,7 @@
       margin: 36px 0;
       a{
         margin: 0 2vw;
-        color: #fff;
+        color: $browncolor;
         font-weight: 500;
         font-size: 20px;
         width: fit-content;
@@ -67,7 +67,7 @@
           padding: 10px;
           border-radius: 5px;
           margin-top: auto;
-          background-color: $browncolor;
+          background-color: $bodyBG;
           color:#fff;
           align-self: end;
         }

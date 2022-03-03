@@ -760,8 +760,8 @@ footer .cr {
 }
 
 .menu-page {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(126, 0, 2, 0.452)), color-stop(rgba(232, 232, 232, 0.748)), to(rgba(255, 255, 255, 0.637))), url("../images/header3.jpg");
-  background-image: linear-gradient(to bottom, rgba(126, 0, 2, 0.452), rgba(232, 232, 232, 0.748), rgba(255, 255, 255, 0.637)), url("../images/header3.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(#5c3d2eab), to(#2D2424)), url("../images/header3.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #5c3d2eab, #2D2424), url("../images/header3.jpg");
   padding-top: 150px;
   padding-bottom: 50px;
   min-height: 100vh;
@@ -802,7 +802,7 @@ footer .cr {
 
 .menu-page ul a {
   margin: 0 2vw;
-  color: #fff;
+  color: #E0C097;
   font-weight: 500;
   font-size: 20px;
   width: -webkit-fit-content;
@@ -852,7 +852,7 @@ footer .cr {
   padding: 10px;
   border-radius: 5px;
   margin-top: auto;
-  background-color: #E0C097;
+  background-color: #2D2424;
   color: #fff;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
@@ -871,16 +871,17 @@ footer .cr {
 section.aboutpage {
   margin-top: 0;
   padding-top: 150px;
-  color: #1d0707;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 209, 0.452)), color-stop(rgba(232, 232, 232, 0.932)), to(white)), url("../images/header3.jpg");
-  background-image: linear-gradient(to bottom, rgba(255, 209, 209, 0.452), rgba(232, 232, 232, 0.932), white), url("../images/header3.jpg");
+  color: #E0C097;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d2424bb), to(#2D2424)), url("../images/header3.jpg");
+  background-image: linear-gradient(to bottom, #2d2424bb, #2D2424), url("../images/header3.jpg");
   padding-top: 150px;
   padding-bottom: 50px;
 }
 
-section.aboutpage h2, section.aboutpage p {
+section.aboutpage h2,
+section.aboutpage p {
   text-align: center;
-  color: #1d0707;
+  color: #E0C097;
 }
 
 section.aboutpage .p-concept {
@@ -943,8 +944,8 @@ section.aboutpage .infoabout {
   margin-top: 50px;
   border-radius: 10px;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 221, 221, 0)), to(#fdfcfcd0));
-  background-image: linear-gradient(rgba(221, 221, 221, 0), #fdfcfcd0);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d242400), color-stop(#2D2424), to(#2D2424));
+  background-image: linear-gradient(#2d242400, #2D2424, #2D2424);
 }
 
 section.aboutpage .infoabout .logo {
@@ -963,12 +964,11 @@ section.aboutpage .infoabout .logo {
 section.aboutpage .infoabout .logo img {
   width: 100%;
   max-width: 600px;
-  -webkit-filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg) brightness(96%) contrast(73%);
-          filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg) brightness(96%) contrast(73%);
+  -webkit-filter: invert(20%) sepia(6%) saturate(4074%) hue-rotate(334deg) brightness(103%) contrast(83%);
+          filter: invert(20%) sepia(6%) saturate(4074%) hue-rotate(334deg) brightness(103%) contrast(83%);
 }
 
 section.aboutpage .infoabout .info {
-  color: #676767;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

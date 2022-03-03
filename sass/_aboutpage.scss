@@ -1,40 +1,36 @@
 section.aboutpage {
   margin-top: 0;
   padding-top: 150px;
-  color: rgb(29, 7, 7);
-  background-image: linear-gradient(
-          to bottom,
-          rgba(255, 209, 209, 0.452),
-          rgba(232, 232, 232, 0.932),
-          rgb(255, 255, 255)
-        ),
-        url("../images/header3.jpg");
-    padding-top: 150px;
-    padding-bottom: 50px;
-    h2,p {
-      text-align: center;
-      color: rgb(29, 7, 7);
+  color: $browncolor;
+  background-image: linear-gradient(to bottom, #2d2424bb, $bodyBG),
+    url("../images/header3.jpg");
+  padding-top: 150px;
+  padding-bottom: 50px;
+  h2,
+  p {
+    text-align: center;
+    color: $browncolor;
   }
-  .p-concept{
+  .p-concept {
     font-size: clamp(16px, 1.5vw, 20px);
     width: 80%;
     margin: auto;
     text-align: left;
-    }
-  .proudlys{
+  }
+  .proudlys {
     margin-top: 50px;
-    .proudlys-container{
+    .proudlys-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      .proudly{
+      .proudly {
         display: flex;
         width: 48%;
-        margin-top:20px ;
-        i{
+        margin-top: 20px;
+        i {
           font-size: 20px;
         }
-        p{
+        p {
           font-size: clamp(14px, 2.5vw, 20px);
           text-align: left;
           margin: 0 0 0 5px;
@@ -42,9 +38,9 @@ section.aboutpage {
       }
     }
   }
-  .head-word{
+  .head-word {
     width: 80%;
-    margin:50px auto 0 auto;
+    margin: 50px auto 0 auto;
     font-size: clamp(14px, 2.5vw, 20px);
   }
   .infoabout {
@@ -54,10 +50,13 @@ section.aboutpage {
     margin-top: 50px;
     border-radius: 10px;
     overflow: hidden;
-    background-image: linear-gradient(rgba(221, 221, 221, 0),#fdfcfcd0);
+    background-image: linear-gradient(
+      #2d242400,
+      #2D2424,
+       $bodyBG);
     .logo {
-    //   width: 49%;
-    //   width: 49%;
+      //   width: 49%;
+      //   width: 49%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -65,66 +64,66 @@ section.aboutpage {
       img {
         width: 100%;
         max-width: 600px;
-        filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg)
-          brightness(96%) contrast(73%);
+        filter: invert(20%) sepia(6%) saturate(4074%) hue-rotate(334deg)
+          brightness(103%) contrast(83%);
       }
     }
     .info {
-        // background-color: $graycolor;
-        // width: 28%;
-        // height: 287px;
-           color:$primaryfootercolor;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-content: space-around;
-        text-align: center;
-        line-height: 13px;
-        padding: 10px 25px;
-        h4 {
-           white-space: nowrap;
-           i{
-           margin-right: 10px;
-           }
-        }
-        span {
-           display: block;
-           font-size: clamp(10px, 1.5vw, 14px);
-        }
-        div{
-            margin-bottom: 20px;
-        }
-     }
-  }
-}
-.staf{
-    margin-bottom: 50px;
-    h2{
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .card {
-        box-shadow: 0px 0px 20px -10px;
-        border: none;
-        overflow: hidden;
-        .card-body {
-          display: flex;
-          flex-direction: column;
-          background-color: $graycolor;
-          p {
-            line-height: 1.2em;
-            font-size: clamp(10px, 2.5vw, 15px);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 5; /* number of lines to show */
-            line-clamp: 5;
-            -webkit-box-orient: vertical;
-          }
-          .reat {
-                font-size: clamp(16px, 2.5vw, 20px);
-                margin-top: auto;
-          }
+      // background-color: $graycolor;
+      // width: 28%;
+      // height: 287px;
+      //  color:$primaryfootercolor;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: space-around;
+      text-align: center;
+      line-height: 13px;
+      padding: 10px 25px;
+      h4 {
+        white-space: nowrap;
+        i {
+          margin-right: 10px;
         }
       }
+      span {
+        display: block;
+        font-size: clamp(10px, 1.5vw, 14px);
+      }
+      div {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.staf {
+  margin-bottom: 50px;
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .card {
+    box-shadow: 0px 0px 20px -10px;
+    border: none;
+    overflow: hidden;
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      background-color: $graycolor;
+      p {
+        line-height: 1.2em;
+        font-size: clamp(10px, 2.5vw, 15px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* number of lines to show */
+        line-clamp: 5;
+        -webkit-box-orient: vertical;
+      }
+      .reat {
+        font-size: clamp(16px, 2.5vw, 20px);
+        margin-top: auto;
+      }
+    }
+  }
 }

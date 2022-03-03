@@ -1,7 +1,7 @@
 $browncolor: #E0C097;
-$graycolor: #5C3D2E
-;
+$graycolor: #5C3D2E;
 $primaryfootercolor: #676767;
+$bodyBG : #2D2424;
 
 * {
    box-sizing: border-box;
@@ -15,7 +15,7 @@ a {
 
 body {
    color: $browncolor;
-   background-color: #2D2424;
+   background-color: $bodyBG;
    h2 {
       color: $browncolor;
       @media (max-width: 767px) {
