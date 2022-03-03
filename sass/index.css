@@ -902,13 +902,6 @@ section.aboutpage .p-concept {
   width: 80%;
   margin: auto;
   text-align: left;
-  min-height: 100px;
-}
-
-@media (max-width: 767px) {
-  section.aboutpage .p-concept {
-    min-height: 150px;
-  }
 }
 
 section.aboutpage .proudlys {
@@ -934,10 +927,20 @@ section.aboutpage .proudlys .proudlys-container .proudly {
   margin-top: 20px;
 }
 
+section.aboutpage .proudlys .proudlys-container .proudly i {
+  font-size: 20px;
+}
+
 section.aboutpage .proudlys .proudlys-container .proudly p {
+  font-size: clamp(14px, 2.5vw, 20px);
   text-align: left;
   margin: 0 0 0 5px;
-  font-size: clamp(10px, 2.5vw, 15px);
+}
+
+section.aboutpage .head-word {
+  width: 80%;
+  margin: 50px auto 0 auto;
+  font-size: clamp(14px, 2.5vw, 20px);
 }
 
 section.aboutpage .infoabout {
