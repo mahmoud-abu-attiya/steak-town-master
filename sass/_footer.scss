@@ -1,6 +1,6 @@
 footer {
   background-color: $graycolor;
-  color: $primaryfootercolor;
+  color: $browncolor;
   padding-top: 30px;
   padding-bottom: 25px;
   overflow: hidden;
@@ -19,8 +19,7 @@ footer {
       a {
         img {
           width: 100%;
-          filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg)
-            brightness(96%) contrast(73%);
+          filter:  invert(20%) sepia(6%) saturate(4074%) hue-rotate(334deg) brightness(103%) contrast(83%);
           @media (max-width: 767px) {
             width: 80%;
           }
@@ -35,7 +34,7 @@ footer {
           padding: 3px;
           margin-right: 3px;
           text-decoration: underline;
-          color: $primaryfootercolor;
+          color: $browncolor;
           font-weight: bold;
         }
       }
@@ -80,10 +79,10 @@ footer {
           display: inline-block;
           padding: 5px;
           cursor: pointer;
-          background-color: #33383b;
+          background-color: $browncolor;
           border-radius: 3px;
           font-size: 20px;
-          color: #ffffff;
+          color: $graycolor;
           margin-right: 5px;
           i {
             margin: 5px;
@@ -93,9 +92,9 @@ footer {
     }
   }
   .cr {
-    color: #67676780;
+    color: $browncolor;
     width: 72%;
-    border-top: solid 2px #67676780;
+    border-top: solid 2px $browncolor;
     text-align: center;
     margin: 25px auto 0 auto;
     padding: 25px 0 0 0;

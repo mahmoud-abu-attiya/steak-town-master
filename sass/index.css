@@ -361,7 +361,7 @@ section.products .card {
 }
 
 section.products .card .card-body {
-  background-color: #B85C38;
+  background-color: #5C3D2E;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,7 +464,7 @@ section.menuoftheday .menu .menu-items .menu-item .food-info p {
 section.menuoftheday .menu .menu-items .menu-item .food-info button {
   float: right;
   min-width: 20%;
-  background-color: #E0C097;
+  background-color: #5C3D2E;
 }
 
 section.menuoftheday .menu .menu-items .menu-item .motdi {
@@ -555,7 +555,7 @@ section.contact-container .contact form.form-floating .form-control {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background-color: #f6f6f6;
+  background-color: #5C3D2E;
   color: #E0C097;
   margin-bottom: 10px;
 }
@@ -570,8 +570,7 @@ section.contact-container .contact form.form-floating input[type="submit"] {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: #E0C097;
-  color: #fff;
+  background-color: #5C3D2E;
   padding: 10px 20px;
 }
 
@@ -583,10 +582,10 @@ section.contact-container .contact form.form-floating input[type="submit"] {
 }
 
 section.contact-container .contact .info {
-  background-color: #f6f6f6;
+  background-color: #5C3D2E;
   width: 28%;
   height: 287px;
-  color: #676767;
+  color: #E0C097;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,8 +619,8 @@ section.contact-container .contact .info span {
 }
 
 footer {
-  background-color: #f6f6f6;
-  color: #676767;
+  background-color: #5C3D2E;
+  color: #E0C097;
   padding-top: 30px;
   padding-bottom: 25px;
   overflow: hidden;
@@ -651,8 +650,8 @@ footer .container {
 
 footer .container .fo-logo a img {
   width: 100%;
-  -webkit-filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg) brightness(96%) contrast(73%);
-          filter: invert(65%) sepia(0%) saturate(63%) hue-rotate(140deg) brightness(96%) contrast(73%);
+  -webkit-filter: invert(20%) sepia(6%) saturate(4074%) hue-rotate(334deg) brightness(103%) contrast(83%);
+          filter: invert(20%) sepia(6%) saturate(4074%) hue-rotate(334deg) brightness(103%) contrast(83%);
 }
 
 @media (max-width: 767px) {
@@ -672,7 +671,7 @@ footer .container .fo-logo ul a {
   padding: 3px;
   margin-right: 3px;
   text-decoration: underline;
-  color: #676767;
+  color: #E0C097;
   font-weight: bold;
 }
 
@@ -733,10 +732,10 @@ footer .container .fo-about .socail a {
   display: inline-block;
   padding: 5px;
   cursor: pointer;
-  background-color: #33383b;
+  background-color: #E0C097;
   border-radius: 3px;
   font-size: 20px;
-  color: #ffffff;
+  color: #5C3D2E;
   margin-right: 5px;
 }
 
@@ -745,9 +744,9 @@ footer .container .fo-about .socail a i {
 }
 
 footer .cr {
-  color: #67676780;
+  color: #E0C097;
   width: 72%;
-  border-top: solid 2px #67676780;
+  border-top: solid 2px #E0C097;
   text-align: center;
   margin: 25px auto 0 auto;
   padding: 25px 0 0 0;
@@ -827,7 +826,7 @@ footer .cr {
 .menu-page .card {
   -webkit-box-shadow: 0px 0px 20px -10px;
           box-shadow: 0px 0px 20px -10px;
-  background-color: #f6f6f6;
+  background-color: #5C3D2E;
 }
 
 .menu-page .card .card-body {
@@ -1028,7 +1027,7 @@ section.aboutpage .infoabout .info div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #f6f6f6;
+  background-color: #5C3D2E;
 }
 
 .staf .card .card-body p {

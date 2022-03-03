@@ -23,8 +23,7 @@ section.contact-container {
          }
          input[type="submit"] {
             width: fit-content;
-            background-color: $browncolor;
-            color: #fff;
+            background-color: $graycolor;
             padding: 10px 20px;
          }
 			@media (max-width:767px) {
@@ -36,7 +35,7 @@ section.contact-container {
          background-color: $graycolor;
          width: 28%;
          height: 287px;
-			color:$primaryfootercolor;
+			color:$browncolor;
          display: flex;
          flex-direction: column;
          justify-content: center;
