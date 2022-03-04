@@ -53,8 +53,10 @@ var typed = new Typed('#typed', {
 
 
 //  vegitables position  //
+let fixedone = document.querySelector(".fixed1")
+let fixedtwo = document.querySelector(".fixed2")
 let header = document.querySelector("#carouselExampleControls");
-let about = document.querySelector(".fixed1");
+let about = document.querySelector(".about");
 let products = document.querySelector(".products");
 let pepper = document.querySelector(".pepper");
 let menuOD = document.querySelector(".menuoftheday");
@@ -63,14 +65,14 @@ let tomatoOne = document.querySelector(".tomato");
 // let fixed1 = document.querySelector(".fixed1")
 
 const pepperPosition = ()=>{
-    let totalHeightForPepper = header.offsetHeight + about.offsetHeight + products.offsetHeight + pepper.offsetHeight;
-    if(window.outerWidth < 670){totalHeightForPepper = totalHeightForPepper +100}
+    let totalHeightForPepper = header.offsetHeight + about.offsetHeight + products.offsetHeight + fixedone.offsetHeight + fixedtwo.offsetHeight + pepper.offsetHeight +200;
+    // if(window.outerWidth < 670){totalHeightForPepper = totalHeightForPepper + 800}
     pepper.style.top = `${totalHeightForPepper}px`;
 }
 // window.addEventListener("resize",pepperPosition)
 const tomatoPosition = ()=>{
-    let totalHeightForTomato = header.offsetHeight + about.offsetHeight + products.offsetHeight + menuOD.offsetHeight;
-    if(window.outerWidth < 670){totalHeightForTomato = totalHeightForTomato +100}
+    let totalHeightForTomato = header.offsetHeight + about.offsetHeight + products.offsetHeight + fixedone.offsetHeight + fixedtwo.offsetHeight - tomato.offsetHeight;
+    // if(window.outerWidth < 670){totalHeightForTomato = totalHeightForTomato +100}
     tomato.style.top = `${totalHeightForTomato}px`;
 }
 const tomatoOnePosition = ()=>{

@@ -14,7 +14,7 @@ section.menuoftheday {
          ),
          url("../images/logo.svg");
       background-size: 101px;
-      box-shadow: 698px 0px 86px -100px #2D2424 inset;
+      box-shadow: 698px 0px 86px -100px $bodyBG inset;
       .menu-items {
          padding: 10px 40px;
          @media (max-width: 991px) {
@@ -61,10 +61,10 @@ section.menuoftheday {
          }
       }
       @media (max-width: 991px) {
-         box-shadow: 498px 0px 86px -100px white inset;
+         box-shadow: 498px 0px 86px -100px $bodyBG inset;
       }
       @media (max-width: 767px) {
-         box-shadow: 298px 0px 86px -100px white inset;
+         box-shadow: 298px 0px 86px -100px $bodyBG inset;
          width: 60%;
       }
    }
