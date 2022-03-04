@@ -962,12 +962,6 @@ section.aboutpage .proudlys .proudlys-container .proudly p {
   margin: 0 0 0 5px;
 }
 
-section.aboutpage .head-word {
-  width: 80%;
-  margin: 50px auto 0 auto;
-  font-size: clamp(14px, 2.5vw, 20px);
-}
-
 section.aboutpage .infoabout {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1083,6 +1077,28 @@ section.aboutpage .infoabout .info div {
 .staf .card .card-body .reat {
   font-size: clamp(16px, 2.5vw, 20px);
   margin-top: auto;
+}
+
+.head-word {
+  margin: 50px 0;
+  font-size: clamp(14px, 2.5vw, 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head-word p {
+  font-size: clamp(16px, 2vw, 30px);
+  padding-right: 10px;
+  margin-right: 20px;
+  border-right: 1px solid;
+}
+
+.head-word img {
+  width: 30%;
 }
 
 .fixed {
