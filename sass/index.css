@@ -785,27 +785,42 @@ footer .cr {
 }
 
 .menu-page {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(#5c3d2eab), to(#2D2424)), url("../images/header3.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #5c3d2eab, #2D2424), url("../images/header3.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.664)), color-stop(#5c3d2eab), to(#2D2424)), url("../images/header3.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.664), #5c3d2eab, #2D2424), url("../images/header3.jpg");
   padding-top: 150px;
   padding-bottom: 50px;
   min-height: 100vh;
 }
 
 .menu-page h2 {
-  color: whitesmoke;
   text-align: center;
 }
 
 .menu-page .menu-p {
-  color: #fff;
-  text-align: center;
-  font-size: clamp(15px, 1.5vw, 18px);
-  width: 70%;
-  background-color: #472718a4;
+  color: #E0C097;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: bold;
+  width: 90%;
+  background-color: #2d2424d3;
   padding: 20px;
   border-radius: 10px;
   margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-page .menu-p img {
+  width: 20%;
+}
+
+.menu-page .menu-p p {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid #5C3D2E;
 }
 
 .menu-page ul {
