@@ -11,11 +11,22 @@ section.aboutpage {
     text-align: center;
     // color: $browncolor;
   }
-  .p-concept {
-    font-size: clamp(16px, 1.5vw, 20px);
-    width: 80%;
-    margin: auto;
-    text-align: left;
+  .concept {
+    // width: 80%;
+    // margin: auto;
+    // text-align: left;
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    img{
+      width: 50%;
+      border-radius: 10px;
+    }
+    .p-concept{
+      font-size: clamp(16px, 1.5vw, 20px);
+      padding-left: 20px;
+      text-align: center;
+    }
   }
   .proudlys {
     margin-top: 50px;

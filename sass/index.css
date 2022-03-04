@@ -922,11 +922,25 @@ section.aboutpage p {
   text-align: center;
 }
 
-section.aboutpage .p-concept {
+section.aboutpage .concept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
+}
+
+section.aboutpage .concept img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+section.aboutpage .concept .p-concept {
   font-size: clamp(16px, 1.5vw, 20px);
-  width: 80%;
-  margin: auto;
-  text-align: left;
+  padding-left: 20px;
+  text-align: center;
 }
 
 section.aboutpage .proudlys {
