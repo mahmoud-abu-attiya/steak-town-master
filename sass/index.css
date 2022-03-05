@@ -813,6 +813,12 @@ footer .cr {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .menu-page .menu-p {
+    width: 100%;
+  }
+}
+
 .menu-page .menu-p img {
   width: 20%;
 }
@@ -821,6 +827,13 @@ footer .cr {
   padding-left: 10px;
   margin-left: 10px;
   border-left: 1px solid #5C3D2E;
+  font-size: clamp(13px, 2.5vw, 18px);
+}
+
+@media (max-width: 767px) {
+  .menu-page .menu-p p {
+    line-height: 1rem;
+  }
 }
 
 .menu-page ul {
@@ -877,7 +890,6 @@ footer .cr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
 }
 
 .menu-page .card .card-body p {
@@ -888,8 +900,8 @@ footer .cr {
 
 .menu-page .card .card-body .price {
   text-align: center;
-  width: 100px;
-  padding: 10px;
+  width: 80px;
+  padding: 5px;
   border-radius: 5px;
   margin-top: auto;
   background-color: #2D2424;
@@ -899,15 +911,6 @@ footer .cr {
       align-self: end;
 }
 
-@media (max-width: 580px) {
-  .menu-page .card .card-body {
-    padding: 5px;
-  }
-  .menu-page .card .card-body h6 {
-    margin: 0;
-  }
-}
-
 section.aboutpage {
   margin-top: 0;
   padding-top: 150px;
@@ -915,6 +918,12 @@ section.aboutpage {
   background-image: linear-gradient(to bottom, #2d2424bb, #2D2424), url("../images/header3.jpg");
   padding-top: 150px;
   padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  section.aboutpage {
+    padding-top: 50px;
+  }
 }
 
 section.aboutpage h2,
@@ -932,13 +941,22 @@ section.aboutpage .concept {
   margin: 50px 0;
 }
 
+@media (max-width: 767px) {
+  section.aboutpage .concept {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section.aboutpage .concept img {
   width: 50%;
   border-radius: 10px;
 }
 
 section.aboutpage .concept .p-concept {
-  font-size: clamp(16px, 1.5vw, 20px);
+  font-size: clamp(13px, 1.5vw, 20px);
   padding-left: 20px;
   text-align: center;
 }
@@ -967,7 +985,12 @@ section.aboutpage .proudlys .proudlys-container .proudly {
 }
 
 section.aboutpage .proudlys .proudlys-container .proudly i {
-  font-size: 20px;
+  border: 2px solid;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 3px;
+  margin-top: 5px;
 }
 
 section.aboutpage .proudlys .proudlys-container .proudly p {
@@ -1141,7 +1164,7 @@ section.aboutpage .infoabout .info div {
   text-align: center;
   max-width: 60%;
   color: #2D2424;
-  text-shadow: 0px 0px 2px #E0C097;
+  text-shadow: 0px 0px 5px #fff;
   font-size: clamp(23px, 2.5vw, 60px);
 }
 
