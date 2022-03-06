@@ -110,3 +110,8 @@ window.addEventListener("load", () => {
 	tomatoOnePosition();
 	pepperPosition();
 });
+window.addEventListener("resize",() => {
+	tomatoPosition();
+	tomatoOnePosition();
+	pepperPosition();
+})

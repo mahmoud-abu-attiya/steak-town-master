@@ -1142,7 +1142,6 @@ section.aboutpage .infoabout .info div {
 .fixed {
   color: #2D2424;
   background-image: url("../images/body-bg.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1158,6 +1157,12 @@ section.aboutpage .infoabout .info div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .fixed {
+    background-attachment: scroll;
+  }
 }
 
 .fixed h2 {
