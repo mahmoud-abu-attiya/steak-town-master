@@ -1144,7 +1144,6 @@ section.aboutpage .infoabout .info div {
   background-image: linear-gradient(#e0c097, #e0c09700), url("../images/body-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   margin: 0 0 80px 0;
   max-height: 500px;
