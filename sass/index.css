@@ -1140,10 +1140,10 @@ section.aboutpage .infoabout .info div {
 
 .fixed {
   color: #2D2424;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e0c097), to(#e0c09700)), url("../images/body-bg.jpg");
-  background-image: linear-gradient(#e0c097, #e0c09700), url("../images/body-bg.jpg");
+  background-image: url("../images/body-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   margin: 0 0 80px 0;
   max-height: 500px;
