@@ -19,7 +19,8 @@ footer {
       a {
         img {
           width: 100%;
-          filter:  invert(20%) sepia(6%) saturate(4074%) hue-rotate(334deg) brightness(103%) contrast(83%);
+          filter: invert(20%) sepia(6%) saturate(4074%) hue-rotate(334deg)
+            brightness(103%) contrast(83%);
           @media (max-width: 767px) {
             width: 80%;
           }

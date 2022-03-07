@@ -69,7 +69,6 @@ let pepper = document.querySelector(".pepper");
 let menuOD = document.querySelector(".menuoftheday");
 let tomato = document.querySelector(".tomato2");
 let tomatoOne = document.querySelector(".tomato");
-// let fixed1 = document.querySelector(".fixed1")
 
 const pepperPosition = () => {
 	let totalHeightForPepper =
@@ -80,10 +79,9 @@ const pepperPosition = () => {
 		fixedtwo.offsetHeight +
 		pepper.offsetHeight +
 		200;
-	if(window.outerWidth < 670){totalHeightForPepper = totalHeightForPepper + 100}
+	if (window.outerWidth < 670) { totalHeightForPepper = totalHeightForPepper + 100 }
 	pepper.style.top = `${totalHeightForPepper}px`;
 };
-// window.addEventListener("resize",pepperPosition)
 const tomatoPosition = () => {
 	let totalHeightForTomato =
 		header.offsetHeight +
@@ -92,7 +90,7 @@ const tomatoPosition = () => {
 		fixedone.offsetHeight +
 		fixedtwo.offsetHeight -
 		tomato.offsetHeight;
-	if(window.outerWidth < 670){totalHeightForTomato = totalHeightForTomato + 30}
+	if (window.outerWidth < 670) { totalHeightForTomato = totalHeightForTomato + 30 }
 	tomato.style.top = `${totalHeightForTomato}px`;
 };
 const tomatoOnePosition = () => {
@@ -110,7 +108,7 @@ window.addEventListener("load", () => {
 	tomatoOnePosition();
 	pepperPosition();
 });
-window.addEventListener("resize",() => {
+window.addEventListener("resize", () => {
 	tomatoPosition();
 	tomatoOnePosition();
 	pepperPosition();

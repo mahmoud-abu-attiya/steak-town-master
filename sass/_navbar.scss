@@ -26,12 +26,12 @@ nav {
   }
   .socail {
     @media (min-width: 992px) {
-        right: 15px;
-        position: absolute;
-        top: 18px;
-        a {
-          margin: 0 5px;
-        }
+      right: 15px;
+      position: absolute;
+      top: 18px;
+      a {
+        margin: 0 5px;
+      }
     }
     a {
       font-size: clamp(20px, 1.5vw, 30px);
@@ -42,18 +42,18 @@ nav {
         transform: scale(1.1);
       }
       @media (min-width: 992px) {
-            margin: 0 5px;
-          }
+        margin: 0 5px;
+      }
     }
   }
-  .navbar-collapse{
+  .navbar-collapse {
     width: 100%;
   }
   #navbarTogglerDemo01 {
     ul {
       width: 100%;
       justify-content: end;
-      :first-child{
+      :first-child {
         margin-left: 0;
       }
       li {
@@ -64,20 +64,20 @@ nav {
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
         margin-left: 50px;
-        // white-space: normal;
         font-size: 20px;
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
           transform: scale(1.15);
           box-shadow: 0px -4px 0px -2px white inset;
-          @media (max-width:992px) {
+          @media (max-width: 992px) {
             transform: none;
           }
         }
         a {
           color: #fff;
         }
-        @media (max-width:992px) {
+        @media (max-width: 992px) {
           margin: 0;
         }
       }

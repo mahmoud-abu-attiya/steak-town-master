@@ -1,15 +1,14 @@
 section.about {
   display: flex;
-  // position: relative;
   align-items: center;
   margin: 80px auto;
   z-index: 4;
-  img{
+  img {
     width: 50%;
     border-radius: 10px;
   }
-  .concept{
-    padding:20px;
+  .concept {
+    padding: 20px;
     text-align: center;
     p {
       margin: 10px 0 10px 5px;
