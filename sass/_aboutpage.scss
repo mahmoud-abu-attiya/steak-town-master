@@ -27,11 +27,18 @@ section.aboutpage {
     img{
       width: 50%;
       border-radius: 10px;
+      @media (max-width:767px) {
+        width: 100%;
+      }
     }
     .p-concept{
       font-size: clamp(13px, 1.5vw, 20px);
       padding-left: 20px;
       text-align: center;
+      width: 50%;
+      @media (max-width:767px) {
+        width: 100%;
+      }
     }
   }
   .proudlys {

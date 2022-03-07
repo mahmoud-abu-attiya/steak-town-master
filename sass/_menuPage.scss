@@ -10,6 +10,9 @@
     padding-top: 150px;
     padding-bottom: 50px;
     min-height: 100vh;
+    @media (max-width:767px) {
+      padding-top: 100px;
+    }
     h2 {
       // color: rgb(245, 245, 245);
       text-align: center;
@@ -31,6 +34,7 @@
       }
       img{
         width: 20%;
+        border-radius: 10px;
       }
       p{
         padding-left: 10px;

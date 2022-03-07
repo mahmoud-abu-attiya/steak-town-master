@@ -792,6 +792,12 @@ footer .cr {
   min-height: 100vh;
 }
 
+@media (max-width: 767px) {
+  .menu-page {
+    padding-top: 100px;
+  }
+}
+
 .menu-page h2 {
   text-align: center;
 }
@@ -821,6 +827,7 @@ footer .cr {
 
 .menu-page .menu-p img {
   width: 20%;
+  border-radius: 10px;
 }
 
 .menu-page .menu-p p {
@@ -956,10 +963,23 @@ section.aboutpage .concept img {
   border-radius: 10px;
 }
 
+@media (max-width: 767px) {
+  section.aboutpage .concept img {
+    width: 100%;
+  }
+}
+
 section.aboutpage .concept .p-concept {
   font-size: clamp(13px, 1.5vw, 20px);
   padding-left: 20px;
   text-align: center;
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  section.aboutpage .concept .p-concept {
+    width: 100%;
+  }
 }
 
 section.aboutpage .proudlys {
@@ -1181,7 +1201,7 @@ section.aboutpage .infoabout .info div {
 
 .fixed2 {
   margin: 80px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.479)), to(rgba(0, 0, 0, 0.541))), url("../images/header2.jpg");
-  background-image: linear-gradient(rgba(128, 128, 128, 0.479), rgba(0, 0, 0, 0.541)), url("../images/header2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.479)), to(rgba(0, 0, 0, 0.541))), url("../images/pic3.jpg");
+  background-image: linear-gradient(rgba(128, 128, 128, 0.479), rgba(0, 0, 0, 0.541)), url("../images/pic3.jpg");
 }
 /*# sourceMappingURL=index.css.map */
