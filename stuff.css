@@ -1,0 +1,15 @@
+.staf{
+  
+}
+.staf .row{
+  max-width: 700px;
+  margin: auto;
+}
+.staf .row .card img{
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+.staf .row .col-12 .card img{
+  aspect-ratio: auto;
+  object-fit: cover;
+}
